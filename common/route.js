@@ -45,10 +45,10 @@ this.route('home', {
   },
          fastRender: true
 });
-        this.route('team', {
-  path: '/meet-the-team',
+        this.route('booking', {
+  path: '/book-with-ivhair',
   layoutTemplate: 'layout',
-        title: 'Meet the Team ',
+        title: 'Book an Appointment ',
    action: function() {
     // this is an instance of RouteController
     // access to:
@@ -62,7 +62,7 @@ this.route('home', {
     // render yieldTemplates
     this.render('header', {to: 'menu'});
     this.render('footer', {to: 'footer'});
-    this.render('team');
+    this.render('booking');
        
   },
              fastRender: true
