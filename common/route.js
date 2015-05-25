@@ -20,7 +20,8 @@ this.route('home', {
     this.render('footer', {to: 'footer'});
     this.render('home');
        
-  }
+  },
+     fastRender: true
 });
     this.route('about', {
   path: '/about-ivhair',
@@ -41,7 +42,8 @@ this.route('home', {
     this.render('footer', {to: 'footer'});
     this.render('about');
        
-  }
+  },
+         fastRender: true
 });
         this.route('team', {
   path: '/meet-the-team',
@@ -62,7 +64,8 @@ this.route('home', {
     this.render('footer', {to: 'footer'});
     this.render('team');
        
-  }
+  },
+             fastRender: true
 });
    
 });
