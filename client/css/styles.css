@@ -726,3 +726,10 @@ pre code {
 .pricing-table .plan-signup a {
 	text-transform: uppercase;
 }
+
+/* Modal  */
+
+.modal-header {
+    background: #11ce94;
+    
+}
