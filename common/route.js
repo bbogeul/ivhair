@@ -23,7 +23,7 @@ this.route('home', {
   },
      fastRender: true
 });
-    this.route('about', {
+    this.route('aboutIv', {
   path: '/about-ivhair',
   layoutTemplate: 'layout',
         title: 'About IV Hair Co',
@@ -40,10 +40,10 @@ this.route('home', {
     // render yieldTemplates
     this.render('header', {to: 'menu'});
     this.render('footer', {to: 'footer'});
-    this.render('about');
+    this.render('aboutIv');
        
   },
-         fastRender: true
+        
 });
         this.route('booking', {
   path: '/book-with-ivhair',
