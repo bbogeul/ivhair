@@ -67,5 +67,49 @@ this.route('home', {
   },
              fastRender: true
 });
+            this.route('suggest', {
+  path: '/suggest-a-style',
+  layoutTemplate: 'layout',
+        title: 'Style Suggestions? ',
+   action: function() {
+    // this is an instance of RouteController
+    // access to:
+    //  this.params
+    //  this.wait
+    //  this.render
+    //  this.stop
+    //  this.redirect
+
+
+    // render yieldTemplates
+    this.render('header', {to: 'menu'});
+    this.render('footer', {to: 'footer'});
+    this.render('suggest');
+       
+  },
+             fastRender: true
+});
+                this.route('suggestBody', {
+  path: '/admin/suggest-a-style',
+  layoutTemplate: 'layout',
+        title: 'Style Suggestions? ',
+   action: function() {
+    // this is an instance of RouteController
+    // access to:
+    //  this.params
+    //  this.wait
+    //  this.render
+    //  this.stop
+    //  this.redirect
+
+
+    // render yieldTemplates
+    this.render('header', {to: 'menu'});
+    this.render('footer', {to: 'footer'});
+    this.render('suggestBody');
+       
+  },
+             fastRender: true
+});
    
 });

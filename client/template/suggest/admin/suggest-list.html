@@ -1,0 +1,34 @@
+<template name="suggestBody">
+          <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title">welcome <br><span class="highlight">KATHERINE</span></h2>
+            <p class="intro">Some people have suggested some styles to you. Take a look and maybe we can help them out! </p>
+            
+ 
+            <ul class="meta list-inline">
+ 
+            </ul><!--//meta-->
+        </div><!--//container-->
+                     <div class="social-media">
+            <div class="social-media-inner container text-center">
+            <h1 style="color:#fff">So far,</h1>
+            </div>
+        </div>
+    </section>
+  <div class="row">
+      <h1 class="text-center">Suggestions from visitors</h1>
+      <div class="container">
+      {{#each tasks}}
+        {{> task}}
+      {{/each}}
+    </div>
+    </div>
+</template>
+<template name="task">
+ <div class="col-md-6">
+    <h2>{{title}}</h2>
+     <p>{{author}}</p>
+     <p>{{planningDate}}</p>
+     <p>{{summary}}</p>
+    </div>
+</template>

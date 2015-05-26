@@ -1,0 +1,41 @@
+<template name="suggest">
+      <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title">suggest a <br><span class="highlight">STYLE</span></h2>
+            <p class="intro">Is there a particular style you want to see or get on your visit here? Suggest a new style with the form below. You can also check out some of our work! </p>
+            
+            <div class="btns">
+                <a class="btn btn-cta-secondary" href="{{pathFor 'booking'}}">BOOK NOW</a>
+                <a class="btn btn-cta-primary" href="" target="_blank"> WHAT WE DO </a>
+            </div>
+            <ul class="meta list-inline">
+ 
+            </ul><!--//meta-->
+        </div><!--//container-->
+        <div class="social-media">
+            <div class="social-media-inner container text-center">
+            <h1 style="color:#fff">GET YOUR HAIR DONE TODAY</h1>
+            </div>
+        </div>
+    </section>
+    <section class="section about">
+<div class="row">
+    <div class="container">
+{{> insertTask}}
+    </div>
+    </div>
+    </section>
+</template>
+<template name="insertTask">
+  {{#autoForm collection="Tasks" id="insertTask" type="insert"}}
+    <fieldset>
+      <h2 class="text-center">Let's add a style</h2>
+      {{> afQuickField name='title'}}
+      {{> afQuickField name='author'}}
+      {{> afQuickField name='summary' rows=6}}
+
+      {{> afQuickField name='planningDate'}}
+    </fieldset>
+    <button type="submit" class="btn btn-success pull-right"><i class="fa fa-plane"></i>SEND!</button>
+  {{/autoForm}}
+</template>
