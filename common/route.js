@@ -43,7 +43,7 @@ this.route('home', {
     this.render('aboutIv');
        
   },
-        
+        fastRender: true
 });
         this.route('booking', {
   path: '/book-with-ivhair',

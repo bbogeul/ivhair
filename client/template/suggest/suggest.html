@@ -27,15 +27,5 @@
     </section>
 </template>
 <template name="insertTask">
-  {{#autoForm collection="Tasks" id="insertTask" type="insert"}}
-    <fieldset>
-      <h2 class="text-center">Let's add a style</h2>
-      {{> afQuickField name='title'}}
-      {{> afQuickField name='author'}}
-      {{> afQuickField name='summary' rows=6}}
-
-      {{> afQuickField name='planningDate'}}
-    </fieldset>
-    <button type="submit" class="btn btn-success pull-right"><i class="fa fa-plane"></i>SEND!</button>
-  {{/autoForm}}
+  {{> quickForm collection="Tasks" id="insertTask" type="insert"}}
 </template>
